@@ -1,0 +1,19 @@
+ADR: 01 
+
+Decision: Monolithic Architecture 
+
+Alternatives considered:  
+
+Microservices architecture- Has many advantages such as quick scalability, fault isolation and quicker deployment time. However, in comes with increased complexity as you must develop
+serval services involving more code, debugging difficulties occur when you are handling multiple services each with its own set of logs.  
+https://www.atlassian.com/microservices/cloud-computing/advantages-of-microservices 
+
+Layered architecture- The separation of the layers simplifies the development and maintenance, for example changing the business logic typerically does not affect the presentation
+layer. Isolated layers can be tested individually allowing unit and integration testing.
+https://zeeshan01.medium.com/the-weaknesses-and-strengths-of-layered-architecture-in-software-development-81ba1206a17b 
+
+Justification-I have selected the monolithic architecture for a few reasons one of them being its simplicity to deploy, as the application is a single unit. Better performance- due to
+inter-component commutation happens within a single process which can be fasted than network-based commutation. It's also very simple to debug because all the code is in one place and
+can easily follow the flow of a request to find the issue. However, some negatives about the monolithic approach are that there is a high chance of having spaghetti code making it
+harder for new users to the system to understand it, alongside this when you are making a small change to the system to deploy this you have to redeploy the whole system.
+\https://datamify.medium.com/monolithic-architecture-advantages-and-disadvantages-e71a603eec89 
