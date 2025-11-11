@@ -39,11 +39,7 @@ Complianace will be confirmed through:
 -Code struture meets the monolithic requirments 
 -Components within the application are highly interconnected and interdependent
 
-Pros and Cons of the options
-Monolithic architecture
--Pro-Simplicity to deploy the system
--Pro-Better performance- due to inter-component commutation 
--Con-Limited flexablility when changing the system
+Pros and Cons of the other options
 
 Layered Architecture
 -Pro-separation of the layers simplifies the development and maintenance,
