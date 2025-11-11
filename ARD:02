@@ -1,4 +1,54 @@
 ADR-02: External Database
 
 Context and Problem Statement:
-The CMS database must store user data, compliant information and customer information. The database needs to hold sercure data have scaleability and compliance with GDPR regulations.
+
+-Should the database be an external system to meet those requirments?
+The CMS database must store user data, compliant information and customer information. The database needs to hold
+sercure data have scaleability and compliance with GDPR regulations.
+
+Decision Drivers:
+-Ensures multi-tenency
+-Sercuity and inline with GDPR regulations
+-Relieablity and backup capablties
+
+Considered options
+-External Database(MySQL)  https://www.forloop.ai/blog/internal-and-external-data
+https://www.quora.com/What-are-the-advantages-and-disadvantages-of-using-a-localhost-database-versus-a-cloud-hosted-database
+-Embedded Database  https://raima.com/embedded-databases-an-in-depth-look/
+-File-Based Storage  https://objectfirst.com/blog/file-storage-what-is-it/
+
+Decision
+-Chosen option- External Database
+-Justifaction- This is the only option that ensures enough scaleability for 20 million users. It also allows for
+a multi-tenecy apporach with each company having its only database and sercuity.
+
+Consequences
+Good:
+-Resources (storage, processing power) are easily scalable on demand to meet growing needs
+-The use of structured query languages enables useful querying capabilities, making it easier to handle large
+amounts of data operations and analysis. 
+-Multi-Tenant approach, using this type of database allows me to ensure data is not shared between compaines 
+using this application as we can provide a database per tenant this allows incredibly high isolation. 
+
+Bad:
+-The challenge with external data is that it lies in its reliable integration and the maintenance of consistency
+-Can have latenecy issues with larger datasets
+
+Confirmation:
+Intergation will be confirmed through:
+-Sercuity testing
+-Multi-tenecy testing
+
+Pros and Cons of the other options
+
+Embedded Database:
+-Pro-Simple and easy to undertsand
+-Con-No scaleable features
+-Con-Unfit for the multi-tenecy approach
+
+File-Based Storage
+-Pro-Simple for end users to naviagate
+-Con-Accessing and managing data issues occur when large amounts of data are involed.
+
+
+
