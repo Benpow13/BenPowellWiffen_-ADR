@@ -12,10 +12,10 @@ Decision Drivers:
 -Ability to intergation future parts of the system
 -Easy to debug and find an error
 
-Considers options
--Monolithic architecture 
--Layered architecture
--Microservices architecture
+Considered options
+-Monolithic architecture  https://www.atlassian.com/microservices/cloud-computing/advantages-of-microservices
+-Layered architecture  https://zeeshan01.medium.com/the-weaknesses-and-strengths-of-layered-architecture-in-software-development-81ba1206a17b
+-Microservices architecture  https://datamify.medium.com/monolithic-architecture-advantages-and-disadvantages-e71a603eec89
 
 Decision
 -Chosen architecture: Monolithic architecture 
