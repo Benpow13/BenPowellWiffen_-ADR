@@ -34,7 +34,7 @@ Bad:
 -The code may become tangled and messy, leading to be harder to understand for new employees
 
 Confirmation
-Complianace will be confirmed through
+Complianace will be confirmed through:
 -Architecture will be deployed in a single functioning unit
 -Code struture meets the monolithic requirments 
 -Components within the application are highly interconnected and interdependent
