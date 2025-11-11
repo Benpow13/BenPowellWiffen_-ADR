@@ -1,0 +1,4 @@
+ADR-02: External Database
+
+Context and Problem Statement:
+The CMS database must store user data, compliant information and customer information. The database needs to hold sercure data have scaleability and compliance with GDPR regulations.
